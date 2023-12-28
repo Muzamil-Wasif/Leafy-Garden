@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeafyGARDEN</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        } 
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .search-bar input {
+            margin-right: 10px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        nav {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        nav button {
+            margin-right: 10px;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .content-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .content-box:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-box img {
+            width: 100%;
+            height:150px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* Remove position: absolute; */
+    width: 100%;
+    margin-top: auto; /* Add this line to push the footer to the bottom */
+}
+section {
+      padding: 2em;
+      text-align: center;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(10, 205, 231, 0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    .contact-form button {
+      background-color: #309c40;
+      color: #fff;
+      padding: 14px 250px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .contact-form button:hover {
+      background-color: #df1010;
+    }
+    p {
+      color: #555;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .menu-item {
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .highlight-button {
+      background-color: #f44336;
+    }
+
+    </style>
+   
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="c:\Users\K TECH\Downloads\logo.jpg" alt="Logo">
+            <h1>LeafyGARDEN</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+        <nav>
+            <a href="C:\Users\K TECH\Desktop\ict project\latestict.html" class="products">
+                <button type="home">Home</button>
+            </a>
+            <a href="C:\Users\K TECH\Desktop\ict project\about.html" class="products">
+                <button type="about">About</button>
+            </a>
+            <a href="C:\Users\K TECH\Documents\contact.html" class="products">
+                <button type="contact">Contact</button>
+            </a>
+            <a href="C:\Users\K TECH\Documents\blog.html" class="products">
+                <button type="blog">Blog</button>
+            </a>
+            <a href="C:\Users\K TECH\Documents\edit.html" class="products">
+                <button type="button">Products</button>
+            </a>
+        </nav>
+    </header>
+    <section>
+        <h2>Leafy Garden: Cultivating Green Joy</h2>
+        <p>Welcome to the LeafyGARDEN blog, where we embark on a journey through the enchanting world of gardening. Our passion for plants and the greenery that surrounds us knows no bounds, and we are delighted to share our insights, tips, and stories with you.</p>
+    
+        <div class="blog-post">
+            <img src="c:\Users\K TECH\Downloads\download (12).jpg" alt="Blooming Flowers">
+            <h3>The Art of Blooms: A Symphony of Colors in Your Garden</h3>
+            <p>Discover the secrets to creating a vibrant and colorful garden with our latest blog post. From selecting the right flowers to understanding the art of companion planting, we guide you through every step to transform your outdoor space into a blooming paradise.</p>
+         
+        </div>
+    
+        <div class="blog-post">
+            <img src="c:\Users\K TECH\Downloads\download (13).jpg" alt="Gardening Tools">
+            <h3>Tools of the Trade: Essential Gardening Tools Every Enthusiast Should Have</h3>
+            <p>Uncover the must-have gardening tools that will make your gardening tasks a breeze. We explore the world of quality tools and equipment, helping you choose the right ones to maintain a well-kept and flourishing garden.</p>
+         
+        </div>
+    
+        <div class="blog-post">
+            <img src="c:\Users\K TECH\Downloads\images (6).jpg" alt="Plant Care Tips">
+            <h3>Green Thumb Chronicles: Mastering the Art of Plant Care</h3>
+            <p>Our expert horticulturists share invaluable tips on plant care, ensuring your green companions thrive in every season. Whether you're a beginner or an experienced gardener, there's always something new to learn to keep your garden in top-notch condition.</p>
+            
+        </div>
+    
+        <div class="blog-post">
+            <img src="c:\Users\K TECH\Downloads\360_F_317610235_VOxsIfYiNChJNo2GelwXJWlCI0So7rXS.jpg" alt="DIY Garden Projects">
+            <h3>DIY Delights: Elevate Your Garden with Creative Projects</h3>
+            <p>Get ready to unleash your creativity with our DIY garden projects. From personalized garden decor to innovative planting ideas, these projects will add a touch of uniqueness to your outdoor space. Let your imagination bloom!</p>
+        
+        </div>
+    </section>
+</body>
+<footer class="main">
+    <div class="Footer">
+        <div class="foot">
+            
+                <h2>LeafyGARDEN</h2>
+            </div>
+            <div class="detail">
+                <p>Get started on your gardening journey today!</p>
+            </div>
+        </div>
+  
+        <div class="footer-newsletter">
+            <h2>Newsletter</h2>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="follow-buttons">
+            <p><i style="width: 40px;" class="fab fa-instagram"></i></p>
+            <p><i style="width: 40px;" class="fab fa-twitter"></i></p>
+            <p><i style="width: 40px;" class="fab fa-linkedin"></i></p>
+            <p><i style="width: 40px;" class="fab fa-facebook"></i></p>
+            <p><i style="width: 40px;" class="fab fa-github"></i></p>
+        </div>
+        <div class="right">
+            <p>Copyright © 2023 Muzamil & Abdullah Developer. All Rights Reserved</p>
+        </div>
+    </div>
+  </footer>
+      
+  </body>
+  
+  </html>
