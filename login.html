@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LeafyGARDEN</title>
+    <link rel="stylesheet" href="C:\Users\K TECH\Desktop\ict project\login.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="c:\Users\K TECH\Downloads\logo.jpg" alt="Logo">
+            <h1>LeafyGARDEN</h1>
+        </div>
+       
+        <nav>
+            <a href="C:\Users\K TECH\Desktop\ict project\latestict.html" class="products">
+                <button type="home">Home</button>
+            </a>
+            <a href="C:\Users\K TECH\Desktop\ict project\about.html" class="products">
+                <button type="about">About</button>
+            </a>
+            <a href="C:\Users\K TECH\Documents\contact.html" class="products">
+                <button type="contact">Contact</button>
+            </a>
+            <a href="C:\Users\K TECH\Documents\blog.html" class="products">
+                <button type="blog">Blog</button>
+            </a>
+            <a href="C:\Users\K TECH\Documents\edit.html" class="products">
+                <button type="button">Products</button>
+            </a>
+        </nav>
+    </header>
+
+    <div class="center-container">
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <footer class="main">
+        <div class="Footer">
+            <div class="foot">
+                <h2>LeafyGARDEN</h2>
+            </div>
+            <div class="detail">
+                <p>Get started on your gardening journey today!</p>
+            </div>
+        </div>
+
+        <div class="footer-newsletter">
+            <h2>Newsletter</h2>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </div>
+    </footer>
+    <script>
+        function login() {
+    // Get input values
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Simple login logic (replace with actual authentication logic)
+    if (username === "username" && password === "password") {
+        alert("Login successful!");
+        window.location.href = "file:///C:/Users/K TECH/Desktop/ict project/homepage.html"; // Redirect to the homepage
+    } else {
+        alert("Invalid username or password. Please try again.");
+    }
+}
+    </script>
+</body>
+
+</html>
